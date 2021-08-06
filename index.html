@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Amidst: Heroes of Pandemic</title>
+  <link rel="icon" href="logo.png" type="image/gif" sizes="30x30">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+  function openLoginForm(){
+  document.body.classList.add("showLoginForm");
+	}
+	function closeLoginForm(){
+	document.body.classList.remove("showLoginForm");
+	}
+  </script>
+</head>
+<body>
+  <div class="wrapper">
+    <nav>
+      <div class="content">
+      <div class="logo"><a href="amidst.html">Amidst</a></div>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ABOUTUS/ABOUT.html">About</a></li>
+          <li><a href="mailto:amidsttribute@gmail.com">Contact</a></li>
+		  <li><a class="two" href="https://twitter.com/amidstpandemic"><i class="fa fa-twitter"></i></a></li>
+		  <li><a class="two" href="https://www.facebook.com/Amidst-122482006680874/"><i class="fa fa-facebook"></i></a></li>
+			<li><a class="two" href="https://github.com/­BSIT-2-2-Web-Develope­rs/Amidst"><i class="fa fa-github"></i></a></li>
+			<li><a class="two" href="https://www.instagram.com/amidsttribute/"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div> 
+    </nav>
+  </div>
+
+  <div class="page-text">
+    <h2>AMIDST: A TRIBUTE TO THE FRONTLINERS</h2>
+    <h1>FOR THEIR SERVICES AND DEDICATION IN THESE TIMES OF PANDEMIC</h1>
+
+
+	<div class="container">
+		<div class="vertical-center">
+			<button onclick="openLoginForm()"> Start Now</button>
+		</div>
+	</div>
+  </div>
+		<div class="popup-overlay"></div>
+		<div class="popup">
+				<div class="popup-close" onclick="closeLoginForm()">×</div>
+		<div class="form">
+				<div class="avatar">
+					<img src="logo.png" alt="">
+				</div>
+			<div class="header">
+				BE THE HERO
+			</div>
+			<div class="element">
+				<label for="username">Username</label>
+				<input type="text" id="username" required>
+			</div>
+			<div class="element">
+				<label for="password">Password</label>
+				<input type="password" id="password" required>
+				<a href="SIGNUP/forgot.html">Forgot password?</a>
+			</div>
+			
+			<div class="element">
+				Not a member? <a href="SIGNUP/signup.html">Sign up </a>
+			</div>
+			<div class="element">
+				<button><a href="HOMEPAGE/homepage.html">Login</a></button>
+			</div>
+		</div>
+	</div>
+  
+
+</body>
+</html>

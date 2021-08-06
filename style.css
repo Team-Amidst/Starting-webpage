@@ -1,0 +1,365 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Poppins;
+}
+body {
+	background: #F3F3F2;
+}
+.wrapper{
+  background: #643B15;
+  position: fixed;
+  width: 100%;
+}
+.wrapper nav{
+  position: relative;
+  display: flex;
+  max-width: calc(100% - 200px);
+  left: 60px;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .content{
+  display: flex;
+  align-items: center;
+}
+nav .content .links{
+  margin-left: 760px;
+  display: flex;
+}
+.content .logo a{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+.content .links li{
+  list-style: none;
+  line-height: 70px;
+}
+.content .links li a,
+.content .links li label{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 9px 17px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.content .links li label{
+  display: none;
+}
+.content .links li a:hover,
+.content .links li label:hover{
+  background: #323c4e;
+}
+.wrapper .search-icon,
+.wrapper .menu-icon{
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 70px;
+  width: 70px;
+  text-align: center;
+}
+.wrapper .menu-icon{
+  display: none;
+}
+.wrapper input[type="checkbox"]{
+  display: none;
+}
+
+
+/* Dropdown Menu code start */
+.content .links ul{
+  position: absolute;
+  background: #171c24;
+  top: 80px;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+}
+.content .links li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.content .links ul li a{
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  border-radius: 0px!important;
+}
+.content .links ul ul{
+  position: absolute;
+  top: 0;
+  right: calc(-100% + 8px);
+}
+.content .links ul li{
+  position: relative;
+}
+.content .links ul li:hover ul{
+  top: 0;
+}
+
+/* Responsive code start */
+@media screen and (max-width: 1250px){
+  .wrapper nav{
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  nav .content .links{
+    margin-left: 30px;
+  }
+  .content .links li a{
+    padding: 8px 13px;
+  }
+  .wrapper .search-box{
+    max-width: calc(100% - 100px);
+  }
+  .wrapper .search-box input{
+    padding: 0 100px 0 15px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .wrapper .menu-icon{
+    display: block;
+  }
+  .wrapper #show-menu:checked ~ .menu-icon i::before{
+    content: "\f00d";
+  }
+  nav .content .links{
+    display: block;
+    position: fixed;
+    background: #14181f;
+    height: 100%;
+    width: 100%;
+    top: 70px;
+    left: -100%;
+    margin-left: 0;
+    max-width: 350px;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    transition: all 0.3s ease;
+  }
+  nav #show-menu:checked ~ .content .links{
+    left: 0%;
+  }
+  .content .links li{
+    margin: 15px 20px;
+  }
+  .content .links li a,
+  .content .links li label{
+    line-height: 40px;
+    font-size: 20px;
+    display: block;
+    padding: 8px 18px;
+    cursor: pointer;
+  }
+  .content .links li a.desktop-link{
+    display: none;
+  }
+
+  /* dropdown responsive code start */
+  .content .links ul,
+  .content .links ul ul{
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    background: none;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  .content .links #show-articles:checked ~ ul,
+  .content .links #show-menu:checked ~ ul{
+    max-height: 100vh;
+  }
+  .content .links ul li{
+    margin: 7px 20px;
+  }
+  .content .links ul li a{
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 5px!important;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .wrapper nav{
+    padding: 0 10px;
+  }
+  .content .logo a{
+    font-size: 27px;
+  }
+  .wrapper .search-box{
+    max-width: calc(100% - 70px);
+  }
+  .wrapper .search-box .go-icon{
+    width: 30px;
+    right: 0;
+  }
+  .wrapper .search-box input{
+    padding-right: 30px;
+  }
+}
+
+.page-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  z-index: -1;
+  padding: 0 20px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.page-text h2{
+  font-size: 45px;
+  color: black;
+  margin: 5px 0;
+}
+
+.container {
+		height: 10px;
+		position: relative;
+}
+
+.vertical-center {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 45%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+button{
+    height: 35px;
+    width: 130px;
+    background: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    letter-spacing: 1px ;
+    border-radius: 3px;
+    margin-top: 30px;
+    box-shadow: 3px 6px 10px rgba(0,0,0,0.2);
+}
+
+button a {
+	color: white;
+	
+}
+a.two{
+	color: #446E48;
+	text-decoration: none;
+}
+body {
+  font-family:"Raleway";
+}
+.center {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.popup-overlay {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100vh;
+  z-index:1;
+  background:rgba(0,0,0,0.5);
+  display:none;
+}
+.popup {
+  position:absolute;
+  top:-150%;
+  left:50%;
+  transform:translate(-50%,-50%) scale(1.15);
+  width:300px;
+  height:440px;
+  background:#F3F3F2;
+  z-index:2;
+  opacity:0;
+  box-shadow:5px 5px 3px rgba(0,0,0,0.2);
+  transition:transform 300ms ease-in-out,opacity 300ms ease-in-out;
+}
+body.showLoginForm .popup-overlay {
+  display:block;
+}
+body.showLoginForm .popup {
+  top:50%;
+  opacity:1;
+  transform:translate(-50%,-50%) scale(1);
+}
+.popup .popup-close {
+  position:absolute;
+  top:-10px;
+  right:-10px;
+  width:40px;
+  height:40px;
+  background:#555;
+  color:#f5f5f5;
+  font-size:35px;
+  font-weight:600;
+  text-align:center;
+  border-radius:50%;
+  cursor:pointer;
+}
+.popup .form .avatar {
+  margin:30px 0px 20px;
+  text-align:center;
+}
+.popup .form .avatar img {
+  width:120px;
+  border-radius:100%;
+}
+.popup .form .header {
+  text-align:center;
+  font-size:20px;
+  font-weight:600;
+  color:#222;
+  margin:20px 0px;
+}
+.popup .form .element {
+  padding:8px 20px;
+}
+.popup .form .element label {
+  display:block;
+  font-size:14px;
+  color:#222;
+  margin-bottom:5px;
+}
+.popup .form .element input {
+  width:100%;
+  padding:8px 10px;
+  box-sizing:border-box;
+  outline:none;
+  border:1px solid #aaa;
+  background:#eee;
+  border-radius:5px;
+}
+.popup .form a {
+	color: #989591;
+	text-decoration: none;
+}
+.popup .form .element button {
+  margin-top:5px;
+  width:100%;
+  padding:10px 0px;
+  text-transform:uppercase;
+  outline:none;
+  border:none;
+  font-size:15px;
+  font-weight:600;
+  border-radius:5px;
+  cursor:pointer;
+  background:#643B15;
+  color:#f5f5f5;
+}
