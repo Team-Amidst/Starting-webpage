@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title> Amidst: FAQ </title>
+	<link rel="stylesheet" type="text/css" href="FAQ.css">
+	<link rel="icon" href="../logo.png" type="image/gif" sizes="30x30">
+	</head>
+<body>
+<a href="../HOMEPAGE/homepage.html"><img src="logo.png"></a>
+<h2>Frequently Asked Questions</h2>
+
+<p>Most Asked Question</p>
+<button class="collapsible">Where do i start to read articles</button>
+<div class="content">
+  <p>First and foremost to start interacting to this website, you need to create an account to use the maximum extent of the service of this website to continue reading articles of heroes of this pandemic.</p>
+</div>
+
+<p>Questions</p>
+<button class="collapsible">Can i create an article in this website?</button>
+<div class="content">
+  <p>Unfortunately, No, you cannot post or create article at this moment. only the developers can create and provide articles from this website to prevent further wrong informations and copyrights to articles that individuals may post.</p>
+</div>
+<button class="collapsible">How to Create an Account</button>
+<div class="content">
+  <p>If you dont have an account, you need to go first to the signup page, it is located to the bottom of sign in page, once you are in the sign up page, fill up the identification form to continue to create account. once the process is completed you are now have an account to continue reading articles to the website.</p>
+</div>
+<button class="collapsible">Does this website has a vip membership?</button>
+<div class="content">
+  <p>None, There is no such thing as vip membership in this website, this website is 100% free of cost for everyone who wants to know about heroism of the every individuals who shows humanity in this kind of situation.</p>
+</div>
+
+<button class="collapsible">Is there a way to contact developers if i have issues using the website?</button>
+<div class="content">
+  <p>Absolutely! The Contact details for our developers has designated to a one page where you can view the info of our moderator and mode of contact to them.</p>
+</div>
+
+<button class="collapsible">How can i navigate to the website easily?</button>
+<div class="content">
+  <p>Developers added few features called Navigation buttons to the top left of the website where you can access anytime you want or roam all over the website, it is very accesible and helpful to users who are eager to explore more articles to this website.</p>
+</div>
+
+<button class="collapsible">What kind of People do we see in the articles?</button>
+<div class="content">
+  <p>People who show humanity to the world even there is a struggle occuring in this year. there is still people who believing that we can do things big in a simple ways. Featuring Heroes of the Pandemic to showcase them and remind people that we are proud of what they do and their honor of their work.</p>
+</div>
+
+<button class="collapsible">The article topics were international or local only?</button>
+<div class="content">
+  <p>the Developers decided to take a scope of local heroes only featuring Filipino heroes who do their best helping the nation amidst this pandemic</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>

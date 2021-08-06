@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Poppins;
+}
+body {
+	background: #643B15;
+}
+.wrapper{
+  background: #643B15;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+h1 {
+	font-size: 60px;
+	font-family: Cambria;
+	text-align: center;
+	color: white;
+	margin: 40px 0;
+}
+h2{
+  font-size: 20px;
+  color: white;
+  margin: 60px 0;
+  text-align: center;
+}
+h3{
+  font-size: 19px;
+  color: white;
+  margin: 50px 0;
+  text-align: center;
+}
+h4 {
+	font-size: 40px;
+	font-family: Cambria;
+	text-align: center;
+	color: white;
+	margin: 40px 0;
+}
+
+img {
+	height: 300px;
+	width: 500px;
+	position: absolute;
+	top: 0%;
+	left: 34%;
+}
+
+
+    
