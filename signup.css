@@ -1,0 +1,68 @@
+body{
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: Garamond;
+	color: white;
+	font-size: 12pt;
+	background-image: url(bgg.jpg);
+	background-repeat: repeat-y;
+}
+table {
+	background-color: black;
+	outline-color: black;
+	width: 30%;
+	outline-width: 3;
+	outline-style: double;
+	border: 5px;
+}
+td{
+	font-family: Garamond;
+	color: white;
+	font-weight: bold;
+	font-size: 12pt;
+	background: black;		
+}
+input.text{
+	background: white;
+	width: 250;
+	color: #151501;
+	font-family: Garamond;
+	font-weight: bolder;
+	font-size: 12pt;	
+}
+textarea{
+	background: white;
+	height: 100;
+	width: 400;
+	font-size: 12pt;
+	font-family: Garamond;
+	color: black;
+	border: solid;
+	border-color: #D3D3D3;
+}
+input.subone{
+   background-color: white;
+
+   color: black;
+   height: 30px;
+	width: 60px;
+   text-decoration: none;
+   cursor: pointer;
+	font-family: Garamond;
+}
+input.resone{
+   background-color: white;
+
+   color: black;
+   height: 30px;
+	width: 60px;
+   text-decoration: none;
+   cursor: pointer;
+	font-family: Garamond;
+}
+h1 {
+	text-align: center;
+	font-face: Cambria;
+	color: white;
+	font-size: 45px;
+}

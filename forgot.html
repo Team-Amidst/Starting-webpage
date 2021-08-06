@@ -1,0 +1,48 @@
+<html>
+	<head> 
+		<title> Amidst: Forgot Password </title>
+		<link rel="stylesheet" type="text/css" href="signup.css">
+		<script>
+			function validateForm() {
+				let x = document.forms["signup"]["lname", "fname", "add"].value;
+				if (x == "") {
+				alert("Must be filled out");
+				return false;
+			}
+		}
+		</script>
+	</head>
+	<body>
+	<br><br><br><br><br>
+			<table align="center" cellspacing="3" cellpadding="5">
+			<h1> Forgot Password </h1>
+			<form name="signup" onsubmit="return validateForm() "method="post" action="../index.html">
+				<tr>
+					<td>Username: <input type="text" class="text" size="20" maxlength="20" name="lname" required><br><br>
+						Password: <input type="text" class="text" size="20" maxlength="20" name="fname" required><br><br> 
+						Confirm Password: 	<input type="text" class="text" size="30" maxlength="30" name="add" required><br><br>
+						
+
+		<input type="checkbox" id="myCheck" name="check" onclick="myFunction()" required>Agree to the Terms and Conditions.
+									
+										<script>
+											function myFunction() {
+											var checkBox = document.getElementById("myCheck");
+											var text = document.getElementById("text");
+												if (checkBox.checked == true){
+													text.style.display = "block";
+												} else {
+													text.style.display = "none";
+												}
+											}
+										</script>
+		<br><br>
+		
+		<input type="submit" class="subone" value="Confirm">
+		<input type="reset" class="resone" name="clear" value="Clear">
+		<br><br><br>
+
+				</td>
+			</tr>
+			</table>
+</html>

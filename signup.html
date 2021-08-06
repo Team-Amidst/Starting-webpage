@@ -1,0 +1,156 @@
+<html>
+	<head> 
+		<title> Amidst: Sign Up </title>
+		<link rel="stylesheet" type="text/css" href="signup.css">
+		<script>
+			function validateForm() {
+				let x = document.forms["signup"]["lname", "fname", "add"].value;
+				if (x == "") {
+				alert("Must be filled out");
+				return false;
+			}
+		}
+		</script>
+	</head>
+	<body>
+			<table align="center" cellspacing="3" cellpadding="5">
+			<h1> Sign up </h1>
+			<form name="signup" onsubmit="return validateForm() "method="post" action="../index.html">
+				<tr>
+					<td>Last Name: <input type="text" class="text" size="20" maxlength="20" name="lname"><br><br>
+						First Name: <input type="text" class="text" size="20" maxlength="20" name="fname"><br><br> 
+						Address: 	<input type="text" class="text" size="30" maxlength="30" name="add"><br><br>
+						Birthdate:	<select>
+								<option>Month
+								<option>January
+								<option>February					
+								<option>March
+								<option>April
+								<option>May
+								<option>June
+								<option>July
+								<option>August
+								<option>September
+								<option>October
+								<option>November					
+								<option>December 	
+									</select>
+									<select>
+								<option>Day
+								<option>1
+								<option>2
+								<option>3
+								<option>4
+								<option>5
+								<option>6
+								<option>7
+								<option>8
+								<option>9
+								<option>10
+								<option>11
+								<option>12
+								<option>13
+								<option>14
+								<option>15
+								<option>16
+								<option>17
+								<option>18
+								<option>19
+								<option>20
+								<option>21
+								<option>22
+								<option>23
+								<option>24
+								<option>25
+								<option>26
+								<option>27
+								<option>28
+								<option>29
+								<option>30
+								<option>31
+									</select>
+									<select>
+								<option>Year
+								<option>1970
+								<option>1971
+								<option>1972
+								<option>1973
+								<option>1974
+								<option>1975
+								<option>1976
+								<option>1977
+								<option>1978
+								<option>1979
+								<option>1980
+								<option>1981
+								<option>1982
+								<option>1983
+								<option>1984
+								<option>1985
+								<option>1986
+								<option>1987
+								<option>1988
+								<option>1989
+								<option>1990
+								<option>1991
+								<option>1992
+								<option>1993
+								<option>1994
+								<option>1995
+								<option>1996
+								<option>1997
+								<option>1998
+								<option>1999
+								<option>2000
+								<option>2001
+								<option>2002
+								<option>2003
+								<option>2004
+								<option>2005
+								<option>2006
+								<option>2007
+								<option>2008
+								<option>2009
+								<option>2010
+								<option>2011
+								<option>2012
+								<option>2013
+								<option>2014
+								<option>2015
+									</select>
+				<br><br>
+		Gender: <input type="radio" name="gen">Male <input type="radio" name="gen">Female<br><br> 
+		Hobbies: 	<input type="checkbox" name="hob">Studying
+					<input type="checkbox" name="hob">Sports
+					<input type="checkbox" name="hob">Singing
+					<input type="checkbox" name="hob">Dancing<br><br>
+		Why do you want to enter? <br><textarea name="comments">Type your text here...</textarea>
+		<br><br>
+			Username: <input type="text" size="24" maxlength="20" name="username"> <br>
+		Type your password: <input type="password" size="13" maxlength="20" name="pass"><br>
+		Confirm password: <input type="password" size="15" maxlength="20" name="pass">
+		<br><br>
+		<input type="checkbox" id="myCheck" name="check" onclick="myFunction()" required>Agree to the Terms and Conditions.
+									
+										<script>
+											function myFunction() {
+											var checkBox = document.getElementById("myCheck");
+											var text = document.getElementById("text");
+												if (checkBox.checked == true){
+													text.style.display = "block";
+												} else {
+													text.style.display = "none";
+												}
+											}
+										</script>
+		<br><br>
+		
+		<input type="submit" class="subone" value="Confirm">
+		<input type="reset" class="resone" name="clear" value="Clear">
+		<br><br><br>
+
+				</td>
+			</tr>
+			</table>
+		</body>
+</html>
